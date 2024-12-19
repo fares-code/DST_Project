@@ -11,11 +11,11 @@ if len(sys.argv) < 5:
 
 try:
     # Fetch inputs from command-line arguments
-    input_values = [float(arg) for arg in sys.argv[1:4]]  # أول ثلاث قيم
-    revenue_percentage = float(sys.argv[4])  # القيمة الرابعة
+    input_values = [float(arg) for arg in sys.argv[1:4]]  
+    revenue_percentage = float(sys.argv[4]) 
 
   
-    csv_path = r"C:\Users\Data\Desktop\DST_Project\back-end\ML\Clean_Books.csv"
+    csv_path = r"C:\Users\Data\Desktop\DST_Project\DST_Project_website\back-end\ML\Clean_Books.csv"
 
    
     data = pd.read_csv(csv_path).drop(columns=['Unnamed: 0'])
